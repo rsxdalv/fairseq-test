@@ -30,5 +30,7 @@ jobs:
         if: matrix.platform == 'macos-14'
         run: |
           python -m pip install https://github.com/rsxdalv/xformers/releases/download/v0.0.27/xformers-0.0.27+184b280.d20241026-cp310-cp310-macosx_11_0_universal2.whl
+      - name: Install pytest
+        run: python -m pip install pytest
       - name: Test attention mask
         run: python tests/test_attention_mask.py
