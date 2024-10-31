@@ -27,5 +27,7 @@ jobs:
       - name: Install locally
         run: |
           python -m pip install wheel ninja delocate
+      - name: list files
+        run: ls -l
       - name: Check the wheel
         run: delocate-listdeps *.whl
