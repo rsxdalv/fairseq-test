@@ -15,16 +15,16 @@ on:
         required: true
       arch:
         type: string
-        default: 'arm64'
+        default: "arm64"
       artifacts_name:
         type: string
-        default: 'wheels'
+        default: "wheels"
       version_override:
         type: string
-        default: ''
+        default: ""
 
 env:
-    ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
   build:
