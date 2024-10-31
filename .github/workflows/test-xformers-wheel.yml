@@ -34,3 +34,9 @@ jobs:
         run: python -m pip install pytest
       - name: Test attention mask
         run: python tests/test_attention_mask.py
+      - name: Test Attention Patterns
+        run: python tests/test_attention_patterns.py
+      - name: Test Attentions
+        run: python tests/test_attentions.py
+      - name: Test rotary embeddings
+        run: python tests/test_rotary_embeddings.py
