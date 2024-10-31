@@ -30,4 +30,5 @@ jobs:
       - name: list files
         run: ls -l
       - name: Check the wheel
-        run: delocate-listdeps *.whl
+        # run: delocate-listdeps *.whl
+        run: delocate-listdeps fairseq-0.12.2-cp38-cp38-macosx_10_9_x86_64.whl
